@@ -38,8 +38,9 @@ export default {
  
     <AppCardListItem v-for="cardItem in cardList" 
     :key="cardItem.index"
-    :cardObject="cardItem"/>
-    :v-bind="cardItem"
+    :cardObject="cardItem"
+    :v-bind="cardItem"/>
+    
  </div>
 </div>
 
