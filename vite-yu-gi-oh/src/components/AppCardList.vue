@@ -8,36 +8,38 @@ export default {
   },
   data() {
     return {
-        cardList: [],
-        apiUrl: "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=16"
-    }
-  }, methods:{
+      cardList: [], 
+      apiUrl: "https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=16"
+    };
+  },
+  methods: {
     getCardList() {
       axios.get(this.apiUrl)
         .then((response) => {
           // cose da fare se la chiamata ha successo
-         // this.card = response.data; // Salva i dati della carta
           console.log(response.data.data);
+          this.cardList = response.data.data; 
         })
         .catch((error) => {
-          // error
+          // gestisci l'errore
           console.log(error);
-        })
+        });
     }
-  }, mounted(){
+  },
+  mounted() {
     this.getCardList();
   }
-  }
-
-
+}
 </script>
 <template>
 
 <div class="container">
  <div class="row h-100 g-4"> 
  
-    <AppCardListItem v-for="index in 20" />
-
+    <AppCardListItem v-for="cardItem in cardList" 
+    :key="cardItem.index"
+    :cardObject="cardItem"/>
+    :v-bind="cardItem"
  </div>
 </div>
 

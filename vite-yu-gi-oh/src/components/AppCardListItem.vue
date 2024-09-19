@@ -1,15 +1,26 @@
 <script>
+export default {
+  data() {
+    return {
 
+    }
+  }, props:{
+    cardObject:{
+    type: Object,
+    required: true
+    }
+  }
+}
 </script>
 
 <template>
 
 <div class="card bg-dark" style="width: 16rem;">
-    <h4 class="card-title text-warning text center">Name</h4>
-  <img class="card-img-top" src="https://s1.zerochan.net/Pot.of.Greed.600.3789420.jpg" alt="">
+    <h4 class="card-title text-warning text center">{{cardObject.name}}</h4>
+  <img class="card-img-top" :src="cardObject.card_images[0].image_url_cropped" alt="">
   <div class="card-body bg-dark">
-    <h5 class="card-title text-warning text center">Type</h5>
-    <p class="card-tite text center">Desc</p>
+    <h5 class="card-title text-warning text center">{{ cardObject.type }}</h5>
+    <p class="card-tite text center">{{ cardObject.race }}</p>
   </div>
 </div>
 
@@ -19,7 +30,7 @@
 <style lang="scss">
 
 p{
-    font-size:12px;
+    font-size:14px;
     color:brown;
 }
 </style>
