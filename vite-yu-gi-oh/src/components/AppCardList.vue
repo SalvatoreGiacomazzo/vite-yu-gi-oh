@@ -19,9 +19,14 @@ export default {
 </script>
 
 <template>
-<h1 class="text-secondary"> list</h1>
-<AppCardListItem />
 
+<div class="container mt-4 px-4">
+ <div class="row h-100 g-4"> 
+ 
+    <AppCardListItem v-for="index in 20" />
+
+ </div>
+</div>
 
 
 </template>
