@@ -1,17 +1,18 @@
 <script>
-import AppCardListItem from "./AppCardListItem.vue"
-
+import AppCardListItem from "./AppCardListItem.vue";
+import axios from "axios";
 
 export default {
   components: {
-  
     AppCardListItem
   },
   data() {
     return {
-
     }
+  }, methods:{
+    
   }
+
 }
 
 
@@ -20,7 +21,7 @@ export default {
 
 <template>
 
-<div class="container mt-4 px-4">
+<div class="container">
  <div class="row h-100 g-4"> 
  
     <AppCardListItem v-for="index in 20" />
