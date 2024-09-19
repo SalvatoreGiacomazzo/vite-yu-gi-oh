@@ -2,12 +2,14 @@
 import AppHeader from "./components/AppHeader.vue"
 import AppCardList from "./components/AppCardList.vue"
 import AppCardListItem from "./components/AppCardListItem.vue"
+import AppSelect from "./components/AppSelect.vue"
 
 export default {
   components: {
     AppHeader,
     AppCardList,
-    AppCardListItem
+    AppCardListItem,
+    AppSelect
   },
   data() {
     return {
@@ -18,8 +20,11 @@ export default {
 </script>
 
 <template>
-
-  <AppHeader />
+<!--Header-->
+<AppHeader />
+<!--Select-->
+  <AppSelect />
+  <!--Card List-->
 <AppCardList />
 
 </template>

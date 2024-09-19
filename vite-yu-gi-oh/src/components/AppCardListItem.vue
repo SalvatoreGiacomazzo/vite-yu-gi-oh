@@ -20,7 +20,7 @@ export default {
   <img class="card-img-top" :src="cardObject.card_images[0].image_url_cropped" alt="">
   <div class="card-body bg-dark">
     <h5 class="card-title text-warning text center">{{ cardObject.type }}</h5>
-    <p class="card-tite text center">{{ cardObject.race }}</p>
+    <p class="card-tite text center">{{ cardObject.archetype }}</p>
   </div>
 </div>
 
