@@ -34,7 +34,7 @@ export default {
  <select class="form-select bg-primary" aria-label="Default select example">
     <option selected>Select an Archetype</option>
   <!--Aggiungere opzioni dinamicamente-->
-  <option v-for="archetype in archList" :key="archetype" :value="archetype">{{ archetype }}</option>
+  <option v-for="archetype in archList" :key="archetype" :value="archetype" @click="console.log('click')">{{ archetype }}</option>
   
  </select>
 </div>

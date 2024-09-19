@@ -1,10 +1,12 @@
 <script>
 import AppCardListItem from "./AppCardListItem.vue";
+import AppSelect from "./AppSelect.vue"
 import axios from "axios";
 
 export default {
   components: {
-    AppCardListItem
+    AppCardListItem,
+    AppSelect
   },
   data() {
     return {
@@ -32,7 +34,8 @@ export default {
 }
 </script>
 <template>
-
+<!--Selettore di archetipi-->
+<AppSelect />
 <div class="container">
  <div class="row h-100 g-4"> 
  

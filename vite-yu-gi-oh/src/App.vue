@@ -22,8 +22,6 @@ export default {
 <template>
 <!--Header-->
 <AppHeader />
-<!--Select-->
-  <AppSelect />
   <!--Card List-->
 <AppCardList />
 
