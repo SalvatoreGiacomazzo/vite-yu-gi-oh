@@ -1,9 +1,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue"
+import AppCardList from "./components/AppCardList.vue"
+import AppCardListItem from "./components/AppCardListItem.vue"
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppCardList,
+    AppCardListItem
   },
   data() {
     return {
@@ -16,7 +20,7 @@ export default {
 <template>
 
   <AppHeader />
-
+<AppCardList />
 
 </template>
 

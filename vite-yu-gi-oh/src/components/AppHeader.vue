@@ -12,6 +12,7 @@ export default {
     <header class="text-warning text-center">
         <h1>Yu-Gi-Oh API</h1>
     </header>
+    
 </template>
 
 <style lang="scss">
