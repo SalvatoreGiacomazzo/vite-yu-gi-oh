@@ -23,7 +23,7 @@ export default {
   },
   logMessage(message){
     const selectedArchetype = event.target.value; 
-      console.log(`Selected archetype: ${selectedArchetype}`);
+      console.log(`figlio ${selectedArchetype}`);
       this.$emit("archetype-search", selectedArchetype);
   }
   },

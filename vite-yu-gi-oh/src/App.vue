@@ -17,7 +17,7 @@ export default {
     }
   }, methods:{
     showInfo(information){
-      console.log(`appmain ${information}`)
+      console.log(`parent ${information}`)
     }
   }
 }
