@@ -15,6 +15,10 @@ export default {
     return {
 
     }
+  }, methods:{
+    showInfo(information){
+      console.log(`appmain ${information}`)
+    }
   }
 }
 </script>
@@ -22,6 +26,8 @@ export default {
 <template>
 <!--Header-->
 <AppHeader />
+  <!--Select-->
+<AppSelect @archetype-search="showInfo" />
   <!--Card List-->
 <AppCardList />
 

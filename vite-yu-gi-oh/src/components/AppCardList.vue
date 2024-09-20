@@ -26,6 +26,9 @@ export default {
           // gestisci l'errore
           console.log(error);
         });
+    },
+    archName(){
+        
     }
   },
   mounted() {
@@ -35,7 +38,7 @@ export default {
 </script>
 <template>
 <!--Selettore di archetipi-->
-<AppSelect />
+
 <div class="container">
  <div class="row h-100 g-4"> 
  
