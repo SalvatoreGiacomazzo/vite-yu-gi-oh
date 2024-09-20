@@ -21,7 +21,7 @@ export default {
           console.log(error);
         });
   },
-  logMessage(message){
+  logMessage(event){
     const selectedArchetype = event.target.value; 
       console.log(`figlio ${selectedArchetype}`);
       this.$emit("archetype-search", selectedArchetype);
@@ -36,7 +36,7 @@ export default {
 
 <template>
 <div class="container d-flex align-items-center">
- <select class="form-select bg-primary" aria-label="Default select example"  @change="logMessage(selectedItem)">
+ <select class="form-select bg-primary" aria-label="Default select example"  @change="logMessage">
     <option selected>Select an Archetype</option>
   <!--Aggiungere opzioni dinamicamente-->
   <option v-for="archetype in archList" :key="archetype" :value="archetype">{{ archetype }}</option>

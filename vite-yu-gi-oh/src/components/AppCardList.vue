@@ -27,9 +27,6 @@ export default {
           console.log(error);
         });
     },
-    archName(){
-        
-    }
   },
   mounted() {
     this.getCardList();
